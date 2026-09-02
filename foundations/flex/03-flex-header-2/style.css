@@ -4,6 +4,7 @@ you'll learn about it later. */
 
 body {
   margin: 0;
+  padding: 0;
   background: #eee;
   font-family: Besley, serif;
 }
@@ -12,6 +13,23 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 8px;
+}
+
+.header-right,
+.header-left {
+  display: flex;
+  /* align-items: center; */
+}
+
+.header-right {
+  gap: 30px;
 }
 
 .profile-image {
@@ -45,4 +63,6 @@ a {
 
 ul {
   list-style-type: none;
+
+  display: flex;
 }
