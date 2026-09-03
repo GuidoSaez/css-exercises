@@ -3,6 +3,8 @@
 body {
   height: 100vh;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   overflow: hidden;
   font-family: Roboto, sans-serif;
 }
@@ -23,4 +25,57 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+/* Solución */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-links,
+.left-links,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  flex-basis: 120px;
+  list-style: none;
+}
+
+.left-links {
+  flex-basis: 100px;
+}
+
+.right-links > li > a,
+.left-links >li > a {
+  color: #555;
+  text-decoration: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 91vh;
+}
+
+.content > img {
+  margin-bottom: 10px;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+.footer {
+  background-color: #eee;
+}
+
+.footer > .left-links {
+  gap: 15px;
 }
